@@ -1,0 +1,246 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans); /* Общий шрифт */
+
+@font-face { /* Шрифты для номеров телефона */
+  font-family: "Arizonia";
+  src: url("./fonts/Arizonia.woff2") format("woff2"),
+       url("./fonts/Arizonia.woff") format("woff");
+}
+
+
+/* Reset start */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+a, b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  font-weight: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+b {
+  font-weight: bold;
+}
+/* Reset end */
+
+html {
+  height: 100%;
+} 
+
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.wrapper { /*for sticky footer*/
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -220px;
+}
+
+.push { /*for sticky footer*/
+  height: 220px;
+}
+
+
+#header {
+  box-sizing: border-box;
+  background: #dbdbdb;
+  height: 199px;
+  padding: 50px 0;
+}
+
+#header .logo {
+  position: absolute;
+  width: 350px;
+  height: 104px;
+}
+
+#header .logo img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-right: 25px;
+}
+
+#header .sale {
+  position: absolute;
+  left: 409px;
+  top: 12px;
+}
+
+#header .phones {
+  float: right;
+  font-family: "Arizonia", sans-serif;
+}
+
+
+#menu {
+  height: 60px;
+  background: #767676;
+}
+
+#menu ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a:hover {
+  text-decoration: underline;
+}
+
+#menu ul li:not(:first-of-type)::before {
+  content: "|";
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+#slider img {
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -100%;
+  bottom: -100%;
+  left: -100%;
+  right: -100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+
+#content {
+  height: 560px;
+  margin-top: 48px;
+  margin-bottom: 195px;
+}
+
+#content .news {
+  position: relative;
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+  width: 350px;
+  padding: 21px 34px 0;
+  background: #777;
+  color: white;
+}
+
+#content .news .new {
+  margin-top: 25px;
+}
+
+#content .news a.archive-link {
+  text-decoration: underline;
+  position: absolute;
+  bottom: 30px;
+  right: 53px;
+}
+
+#content .about {
+  float: right;
+  height: 100%;
+  box-sizing: border-box;
+  width: 571px;
+  padding-top: 21px;
+}
+
+#content .about .mt {
+  margin-top: 20px;
+}
+
+#content .about .employment .col1 {
+  width: 270px;
+  float: left;
+}
+
+#content .about .employment .col2 {
+  width: 270px;
+  float: right;
+}
+
+#footer { /*sticky footer*/
+  height: 220px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 50px;
+  background: #777;
+  color: white;
+}
+
+#footer .copyright {
+  float: left;
+  height: 100%;
+  width: 350px;
+}
+
+#footer .nav {
+  position: absolute;
+  left: 360px;
+  text-decoration: underline;
+}
+
+#footer .sign {
+  float: right;
+  width: 250px;
+}

@@ -1,1 +1,17 @@
-{}
+{
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-copy": "~0.8.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-copy": "~0.8.2",
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-cssmin": "~0.14.0",
+    "grunt-contrib-htmlmin": "~0.6.0",
+    "grunt-contrib-clean": "~1.0.0"
+  },
+  "scripts": {
+    "grunt": "./node_modules/.bin/grunt"
+  }
+}
